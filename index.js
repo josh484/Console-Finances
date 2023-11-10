@@ -92,6 +92,13 @@ var totalPOL = 0;
 var averages = [];
 var countAvg;
 
+var vtotal = 0;
+var greatest = [[]];
+var lowest = [[]];
+
+greatest[0][1] = 0;
+lowest[0][1] = 0;
+
 /* For loop to go through all of finance */
 for (i = 0; i < finances.length; i++){
 
@@ -119,4 +126,22 @@ for (i = 1; i < averages.length; i++){
   newTotal += averages[i];
 }
 
+/* go through the differences again */
+for (i = 0; i < averages.length; i++){
 
+  /* add the difference into their respective months  */
+  finances[i][1] = averages[i];
+  
+  /* when the difference is greater than greatest replace the value in greatest, with the date and difference */
+  if (finances[i][1] > greatest[0][1]  ){
+    greatest[0][1] = finances[i][1];
+    greatest[0][0] = finances[i][0];
+  }
+  /* when the difference is lower than lowest replace the value in lowest, with the date and difference */
+  if (finances[i][1] < lowest[0][1]  ){
+    lowest[0][1] = finances[i][1];
+    lowest[0][0] = finances[i][0];
+  }
+
+  
+}
