@@ -102,7 +102,7 @@ for (i = 0; i < finances.length; i++){
   totalPOL = totalPOL + finances[i][1]
 
 
-  /* Push the difference between 2 months into an array */
+  /* Push the difference between 2 months into an array  */
   if (countAvg !== finances[i][1]) {
     averages.push(finances[i][1] - countAvg);
     countAvg = finances[i][1];
@@ -112,3 +112,11 @@ for (i = 0; i < finances.length; i++){
   } 
 
 }
+
+/* get the total difference within the array */
+var newTotal = 0;
+for (i = 1; i < averages.length; i++){
+  newTotal += averages[i];
+}
+
+
