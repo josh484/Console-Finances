@@ -142,6 +142,14 @@ for (i = 0; i < averages.length; i++){
     lowest[0][1] = finances[i][1];
     lowest[0][0] = finances[i][0];
   }
-
   
 }
+
+console.log("Financial Analysis");
+console.log("----------------")
+console.log("Total Months: " + totalMonths);
+console.log("Total: $" + totalPOL);
+vtotal = newTotal/(totalMonths-1);
+console.log("Average Change: " + vtotal.toFixed(2));
+console.log("Greatest Increase in Profits/Losses: "+ greatest[0][0] + "($"+ greatest[0][1] + ")");
+console.log("Greatest Decrease in Profits/Losses: "+ lowest[0][0] + "($"+ lowest[0][1] + ")");
