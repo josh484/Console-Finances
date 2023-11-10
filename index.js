@@ -86,3 +86,29 @@ var finances = [
   ['Jan-2017', 138230],
   ['Feb-2017', 671099],
 ];
+
+var totalMonths = 0;
+var totalPOL = 0;
+var averages = [];
+var countAvg;
+
+/* For loop to go through all of finance */
+for (i = 0; i < finances.length; i++){
+
+  /* months counter */
+  totalMonths++;
+  
+  /* get the total */
+  totalPOL = totalPOL + finances[i][1]
+
+
+  /* Push the difference between 2 months into an array */
+  if (countAvg !== finances[i][1]) {
+    averages.push(finances[i][1] - countAvg);
+    countAvg = finances[i][1];
+  }
+  else{
+    countAvg = finances[i][1];
+  } 
+
+}
