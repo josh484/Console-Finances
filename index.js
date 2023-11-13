@@ -91,7 +91,6 @@ var totalMonths = 0;
 var totalPOL = 0;
 var averages = [];
 var countAvg;
-
 var vtotal = 0;
 var greatest = [[]];
 var lowest = [[]];
@@ -105,11 +104,11 @@ for (i = 0; i < finances.length; i++){
   /* months counter */
   totalMonths++;
   
-  /* get the total */
+  /* get the total net profit/loss */
   totalPOL = totalPOL + finances[i][1]
 
 
-  /* Push the difference between 2 months into an array  */
+  /* Push the difference between 2 months into the array  */
   if (countAvg !== finances[i][1]) {
     averages.push(finances[i][1] - countAvg);
     countAvg = finances[i][1];
@@ -145,6 +144,7 @@ for (i = 0; i < averages.length; i++){
   
 }
 
+/* Output all answers */
 console.log("Financial Analysis");
 console.log("----------------")
 console.log("Total Months: " + totalMonths);
