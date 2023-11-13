@@ -1,6 +1,5 @@
-# Console-Finances
-Console Finance
-Link to Webpage: https://josh484.github.io/Bootstrap-Portfolio/
+## Console-Finances
+Link to Webpage: https://josh484.github.io/Console-Finances/
 ## Description 
 This website is only a shell, where all the calculations for the task is outputted to the console. I was given an array with data where I had to output various answers using key aspects of javaScript. This task helped me understand the power of javaScript as well as get a basic understanding on how to use it effectively. 
 
@@ -9,10 +8,10 @@ In order to install the project simply click the green code button and download 
 Once downloaded simply right click on the file and unzip the folder.
 ## Usage 
 Once the file is downloaded you can open the index.html on your web browser you will be met with this page:
-![Landing Page](assets/images/homepage.png).
+![Landing Page](assets/images/homepage.png)
 All calculations are outputted onto the console as stated in the homepage.
 Shown here: 
-![Console](assets/images/console.png).
+![Console](assets/images/console.png)
 ## Features
 Here are a list of features for this task.
 
